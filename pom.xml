@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+
+	<groupId>com.codeaches</groupId>
+	<artifactId>oauth2-authorization-and-resource-servers</artifactId>
+	<version>0.0.1-SNAPSHOT</version>
+
+	<description>Demo project for Spring Boot OAuth2 Authorization and Resource Server</description>
+	<packaging>pom</packaging>
+
+	<modules>
+		<module>oauth2-authorization-server</module>
+		<module>car-inventory-service</module>
+	</modules>
+
+	<url>https://codeaches.com/</url>
+
+	<licenses>
+		<license>
+			<name>MIT License</name>
+			<url>http://www.opensource.org/licenses/mit-license.php</url>
+		</license>
+	</licenses>
+
+	<developers>
+		<developer>
+			<name>Pavan Gurudutt</name>
+			<email>pavan@codeaches.com</email>
+			<id>pavan</id>
+			<roles>
+				<role>Developer</role>
+			</roles>
+			<organization>Codeaches</organization>
+			<organizationUrl>https://codeaches.com/</organizationUrl>
+		</developer>
+	</developers>
+
+</project>
