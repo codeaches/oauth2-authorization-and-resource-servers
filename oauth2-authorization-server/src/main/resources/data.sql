@@ -19,8 +19,8 @@ VALUES
     'carInventory',
     'read,write',
     'authorization_code,check_token,refresh_token,password',
-    25000,
-    500000
+    1000000,
+    1000000
   );
 
 --
