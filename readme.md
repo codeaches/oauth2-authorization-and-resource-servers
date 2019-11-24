@@ -14,5 +14,5 @@
 
 [Codeaches Website]: https://codeaches.com
 
-[CircleCI badge]: https://circleci.com/gh/codeaches/spring-boot-kafka-examples.svg?style=shield&circle-token=:circle-token
-[CircleCI]: https://circleci.com/gh/codeaches/spring-boot-kafka-examples
+[CircleCI badge]: https://circleci.com/gh/codeaches/oauth2-authorization-and-resource-servers.svg?style=shield&circle-token=:circle-token
+[CircleCI]: https://circleci.com/gh/codeaches/oauth2-authorization-and-resource-servers
