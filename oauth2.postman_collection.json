@@ -49,12 +49,12 @@
 							]
 						},
 						"url": {
-							"raw": "http://localhost:9050/oauth/token",
+							"raw": "http://localhost:8080/oauth/token",
 							"protocol": "http",
 							"host": [
 								"localhost"
 							],
-							"port": "9050",
+							"port": "8080",
 							"path": [
 								"oauth",
 								"token"
@@ -89,12 +89,12 @@
 							]
 						},
 						"url": {
-							"raw": "http://localhost:9050/oauth/check_token",
+							"raw": "http://localhost:8080/oauth/check_token",
 							"protocol": "http",
 							"host": [
 								"localhost"
 							],
-							"port": "9050",
+							"port": "8080",
 							"path": [
 								"oauth",
 								"check_token"
@@ -139,12 +139,12 @@
 							]
 						},
 						"url": {
-							"raw": "http://localhost:9050/oauth/token",
+							"raw": "http://localhost:8080/oauth/token",
 							"protocol": "http",
 							"host": [
 								"localhost"
 							],
-							"port": "9050",
+							"port": "8080",
 							"path": [
 								"oauth",
 								"token"
@@ -194,12 +194,12 @@
 							]
 						},
 						"url": {
-							"raw": "http://localhost:9050/oauth/token",
+							"raw": "http://localhost:8080/oauth/token",
 							"protocol": "http",
 							"host": [
 								"localhost"
 							],
-							"port": "9050",
+							"port": "8080",
 							"path": [
 								"oauth",
 								"token"
@@ -234,12 +234,12 @@
 							]
 						},
 						"url": {
-							"raw": "http://localhost:9050/oauth/check_token",
+							"raw": "http://localhost:8080/oauth/check_token",
 							"protocol": "http",
 							"host": [
 								"localhost"
 							],
-							"port": "9050",
+							"port": "8080",
 							"path": [
 								"oauth",
 								"check_token"
@@ -284,12 +284,12 @@
 							]
 						},
 						"url": {
-							"raw": "http://localhost:9050/oauth/token",
+							"raw": "http://localhost:8080/oauth/token",
 							"protocol": "http",
 							"host": [
 								"localhost"
 							],
-							"port": "9050",
+							"port": "8080",
 							"path": [
 								"oauth",
 								"token"
@@ -320,12 +320,12 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "http://localhost:8010/viewCars",
+							"raw": "http://localhost:9090/viewCars",
 							"protocol": "http",
 							"host": [
 								"localhost"
 							],
-							"port": "8010",
+							"port": "9090",
 							"path": [
 								"viewCars"
 							]
@@ -360,12 +360,12 @@
 							"raw": "{\"car\":\"civic\"}"
 						},
 						"url": {
-							"raw": "http://localhost:8010/addCars",
+							"raw": "http://localhost:9090/addCars",
 							"protocol": "http",
 							"host": [
 								"localhost"
 							],
-							"port": "8010",
+							"port": "9090",
 							"path": [
 								"addCars"
 							]
@@ -389,12 +389,12 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "http://localhost:8010/viewCars",
+							"raw": "http://localhost:9090/viewCars",
 							"protocol": "http",
 							"host": [
 								"localhost"
 							],
-							"port": "8010",
+							"port": "9090",
 							"path": [
 								"viewCars"
 							]
@@ -429,12 +429,12 @@
 							"raw": "{\"car\":\"civic\"}"
 						},
 						"url": {
-							"raw": "http://localhost:8010/addCars",
+							"raw": "http://localhost:9090/addCars",
 							"protocol": "http",
 							"host": [
 								"localhost"
 							],
-							"port": "8010",
+							"port": "9090",
 							"path": [
 								"addCars"
 							]
