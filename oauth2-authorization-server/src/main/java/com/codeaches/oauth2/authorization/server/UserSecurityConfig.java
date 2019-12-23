@@ -17,34 +17,34 @@ import org.springframework.security.crypto.password.PasswordEncoder;
 @Configuration
 public class UserSecurityConfig extends WebSecurityConfigurerAdapter {
 
-    @Autowired
-    DataSource ds;
+  @Autowired
+  DataSource ds;
 
-    @Override
-    @Bean(BeanIds.USER_DETAILS_SERVICE)
-    public UserDetailsService userDetailsServiceBean() throws Exception {
-	return super.userDetailsServiceBean();
-    }
+  @Override
+  @Bean(BeanIds.USER_DETAILS_SERVICE)
+  public UserDetailsService userDetailsServiceBean() throws Exception {
+    return super.userDetailsServiceBean();
+  }
 
-    @Override
-    @Bean(name = BeanIds.AUTHENTICATION_MANAGER)
-    public AuthenticationManager authenticationManagerBean() throws Exception {
-	return super.authenticationManagerBean();
-    }
+  @Override
+  @Bean(name = BeanIds.AUTHENTICATION_MANAGER)
+  public AuthenticationManager authenticationManagerBean() throws Exception {
+    return super.authenticationManagerBean();
+  }
 
-    @Bean("userPasswordEncoder")
-    PasswordEncoder userPasswordEncoder() {
-	return new BCryptPasswordEncoder(4);
-    }
+  @Bean("userPasswordEncoder")
+  PasswordEncoder userPasswordEncoder() {
+    return new BCryptPasswordEncoder(4);
+  }
 
-    @Override
-    protected void configure(AuthenticationManagerBuilder auth) throws Exception {
+  @Override
+  protected void configure(AuthenticationManagerBuilder auth) throws Exception {
 
-	// BCryptPasswordEncoder(4) is used for users.password column
-	JdbcUserDetailsManagerConfigurer<AuthenticationManagerBuilder> cfg = auth.jdbcAuthentication()
-		.passwordEncoder(userPasswordEncoder()).dataSource(ds);
+    // BCryptPasswordEncoder(4) is used for users.password column
+    JdbcUserDetailsManagerConfigurer<AuthenticationManagerBuilder> cfg = auth.jdbcAuthentication()
+        .passwordEncoder(userPasswordEncoder()).dataSource(ds);
 
-	cfg.getUserDetailsService().setEnableGroups(true);
-	cfg.getUserDetailsService().setEnableAuthorities(false);
-    }
+    cfg.getUserDetailsService().setEnableGroups(true);
+    cfg.getUserDetailsService().setEnableAuthorities(false);
+  }
 }
