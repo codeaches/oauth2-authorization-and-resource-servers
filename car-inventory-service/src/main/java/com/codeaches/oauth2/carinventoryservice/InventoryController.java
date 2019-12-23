@@ -15,24 +15,24 @@ import org.springframework.web.bind.annotation.RestController;
 @EnableGlobalMethodSecurity(prePostEnabled = true)
 public class InventoryController {
 
-	@GetMapping("viewCars")
-	@PreAuthorize("hasAuthority('INVENTORY_VIEW')")
-	public Set<String> viewCars() {
+  @GetMapping("viewCars")
+  @PreAuthorize("hasAuthority('INVENTORY_VIEW')")
+  public Set<String> viewCars() {
 
-		return cars;
-	}
+    return cars;
+  }
 
-	@PostMapping("addCars")
-	@PreAuthorize("hasAuthority('INVENTORY_ADD')")
-	public String addCars(@RequestBody HashMap<String, String> payload) {
+  @PostMapping("addCars")
+  @PreAuthorize("hasAuthority('INVENTORY_ADD')")
+  public String addCars(@RequestBody HashMap<String, String> payload) {
 
-		cars.addAll(payload.values());
-		return payload.values() + " was added to inventory successfully";
-	}
+    cars.addAll(payload.values());
+    return payload.values() + " was added to inventory successfully";
+  }
 
-	static Set<String> cars = new HashSet<>();
-	static {
-		cars.add("Toyota");
-		cars.add("Benz");
-	}
+  static Set<String> cars = new HashSet<>();
+  static {
+    cars.add("Toyota");
+    cars.add("Benz");
+  }
 }
