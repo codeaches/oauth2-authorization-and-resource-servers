@@ -23,14 +23,14 @@ public class EncryptBCryptPassword {
     String kellyRawPassword = "kelly@123";
     String kellyEncryptedPassword = encoder4.encode(kellyRawPassword);
 
-    log.info(String.format("John's Raw Password                     = %s", johnRawPassword));
-    log.info(String.format("John's Bcrypt Encrypted Password        = %s", johnEncryptedPassword));
-    log.info(String.format("John's Bcrypt Encrypted Password Valid  = %s",
+    System.out.println(String.format("John's Raw Password                     = %s", johnRawPassword));
+    System.out.println(String.format("John's Bcrypt Encrypted Password        = %s", johnEncryptedPassword));
+    System.out.println(String.format("John's Bcrypt Encrypted Password Valid  = %s",
         encoder4.matches(johnRawPassword, johnEncryptedPassword)));
 
-    log.info(String.format("Kelly's Raw Password                    = %s", kellyRawPassword));
-    log.info(String.format("Kelly's Bcrypt Encrypted Password       = %s", kellyEncryptedPassword));
-    log.info(String.format("Kelly's Bcrypt Encrypted Password Valid = %s",
+    System.out.println(String.format("Kelly's Raw Password                    = %s", kellyRawPassword));
+    System.out.println(String.format("Kelly's Bcrypt Encrypted Password       = %s", kellyEncryptedPassword));
+    System.out.println(String.format("Kelly's Bcrypt Encrypted Password Valid = %s",
         encoder4.matches(kellyRawPassword, kellyEncryptedPassword)));
 
     /*
@@ -44,9 +44,9 @@ public class EncryptBCryptPassword {
     String appclientRawPassword = "appclient@123";
     String appclientEncryptedPassword = encoder8.encode(appclientRawPassword);
 
-    log.info(String.format("appclient Raw Password                    = %s", appclientRawPassword));
-    log.info(String.format("appclient Bcrypt Encrypted Password       = %s", appclientEncryptedPassword));
-    log.info(String.format("appclient Bcrypt Encrypted Password Valid = %s",
+    System.out.println(String.format("appclient Raw Password                    = %s", appclientRawPassword));
+    System.out.println(String.format("appclient Bcrypt Encrypted Password       = %s", appclientEncryptedPassword));
+    System.out.println(String.format("appclient Bcrypt Encrypted Password Valid = %s",
         encoder4.matches(appclientRawPassword, appclientEncryptedPassword)));
   }
 }
