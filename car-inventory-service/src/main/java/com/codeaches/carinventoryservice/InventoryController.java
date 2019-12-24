@@ -1,4 +1,4 @@
-package com.codeaches.oauth2.carinventoryservice;
+package com.codeaches.carinventoryservice;
 
 import java.util.HashMap;
 import java.util.HashSet;
@@ -24,10 +24,10 @@ public class InventoryController {
 
   @PostMapping("addCars")
   @PreAuthorize("hasAuthority('INVENTORY_ADD')")
-  public String addCars(@RequestBody HashMap<String, String> payload) {
+  public Set<String> addCars(@RequestBody HashMap<String, String> payload) {
 
     cars.addAll(payload.values());
-    return payload.values() + " was added to inventory successfully";
+    return cars;
   }
 
   static Set<String> cars = new HashSet<>();
