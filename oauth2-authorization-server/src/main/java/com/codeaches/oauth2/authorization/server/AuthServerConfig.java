@@ -37,7 +37,7 @@ public class AuthServerConfig extends AuthorizationServerConfigurerAdapter {
 
   @Bean("clientPasswordEncoder")
   PasswordEncoder clientPasswordEncoder() {
-    return new BCryptPasswordEncoder(8);
+    return new BCryptPasswordEncoder(4);
   }
 
   @Override
@@ -46,7 +46,7 @@ public class AuthServerConfig extends AuthorizationServerConfigurerAdapter {
     // This will enable /oauth/check_token access
     cfg.checkTokenAccess("permitAll");
 
-    // BCryptPasswordEncoder(8) is used for oauth_client_details.user_secret
+    // BCryptPasswordEncoder(4) is used for oauth_client_details.user_secret
     cfg.passwordEncoder(clientPasswordEncoder());
   }
 

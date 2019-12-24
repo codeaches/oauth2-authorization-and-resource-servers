@@ -1,8 +1,8 @@
-package com.codeaches.oauth2.authorization.server.util;
+package com.codeaches.util;
 
 import java.util.Base64;
 
-public class Base64Encoder {
+public class CodeachesBase64Encoder {
 
   public static void main(String[] args) {
 
@@ -11,6 +11,6 @@ public class Base64Encoder {
 
     // This Base64 password for appclient:appclient@123 will be used in the http
     // header when requesting the token
-    System.out.println(String.format("appclient's Base64 Password is %s", base64AuthHeader));
+    System.out.println("appclient's Base64 Password is " + base64AuthHeader);
   }
 }
