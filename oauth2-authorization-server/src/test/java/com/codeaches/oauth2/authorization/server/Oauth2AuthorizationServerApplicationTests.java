@@ -1,10 +1,19 @@
-package com.codeaches.util;
+package com.codeaches.oauth2.authorization.server;
 
 import java.util.Base64;
 
-public class CodeachesBase64Encoder {
+import org.junit.jupiter.api.Test;
+import org.springframework.boot.test.context.SpringBootTest;
 
-  public static void main(String[] args) {
+@SpringBootTest
+class Oauth2AuthorizationServerApplicationTests {
+
+	@Test
+	void contextLoads() {
+	}
+
+  @Test
+  void generateBase64EncodedValue() {
 
     // Get the Base64 password for appclient:appclient@123
     String base64AuthHeader = Base64.getEncoder().encodeToString("appclient:appclient@123".getBytes());

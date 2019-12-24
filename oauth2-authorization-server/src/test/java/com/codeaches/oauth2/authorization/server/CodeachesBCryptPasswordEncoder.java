@@ -1,17 +1,14 @@
-package com.codeaches.util;
+package com.codeaches.oauth2.authorization.server;
 
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
+import org.junit.jupiter.api.Test;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 
 public class CodeachesBCryptPasswordEncoder {
 
-  static Logger log = LoggerFactory.getLogger(CodeachesBCryptPasswordEncoder.class);
+  @Test
+  void bcryptPasswordEncoder() {
 
-  public static BCryptPasswordEncoder encoder4 = new BCryptPasswordEncoder(4);
-
-  public static void main(String[] args) {
-
+    BCryptPasswordEncoder encoder4 = new BCryptPasswordEncoder(4);
     /*
      * Users: john/john@123 kelly/kelly@123
      * 
